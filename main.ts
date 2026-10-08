@@ -91,6 +91,15 @@ namespace timerSprite {
             this.recalculateDimensions();
         }
 
+        setCharacterImages(digits: Image[], colon: Image, period: Image, smallDigits?: Image[]) {
+            this.digits = digits;
+            this.colon = colon;
+            this.period = period;
+            this.smallDigits = smallDigits;
+
+            this.recalculateDimensions();
+        }
+
         setFormatEnabled(format: Format, enabled: boolean) {
             if (enabled) {
                 this.formatFlags |= format;
