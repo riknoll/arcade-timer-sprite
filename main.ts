@@ -113,6 +113,10 @@ namespace timerSprite {
             this.currentTime = millis;
         }
 
+        getElapsedTime() {
+            return this.currentTime;
+        }
+
         setColors(backgroundColor: number, borderColor: number) {
             this.backgroundColor = backgroundColor;
             this.borderColor = borderColor;
